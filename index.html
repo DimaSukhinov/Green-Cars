@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title></title>
+    <link type="image/x-icon" rel="shortcut icon" href="img/favicon.ico">
+    <link href = "fonts/AvenirNext/style.css" rel = "stylesheet" type = "text/css" />
+    <link href = "fonts/ProximaNova/stylesheet.css" rel = "stylesheet" type = "text/css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header_div"></div>
+        <!-- Меню -->
+        <div class="topnav" id="myTopnav">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt=""></a> 
+            </div>
+            <div class="main_page">
+                <a href="index.html">Green Cars</a>
+            </div>    
+            <a href="#auto">Наши автомобили</a>
+            <a href="#tariffs">Тарифы</a>
+            <a href="shares.html">Акции</a>
+            <a href="rules.html">Правила</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa">☰</i>
+            </a>
+        </div>
+
+        <!-- Баннер -->
+        <div class="container">
+            <div class="header_banner">
+                <h1 class="header_title"></br >Каршеринг <span style="color: #008000;">Green Cars</span>, поминутный прокат</br >авто в Минске</h1>
+            </div>
+            <div class="row_banner">           
+                <div class="col_banner-left">
+                    <p>Современная аренда экологичных авто</p>
+                    <p>Никаких офисов, менеджеров, бумажных</br >договоров</p>
+                </div>
+                <div class="col_banner">
+                    <img src="img/banner.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Преимущества -->
+        <div class="container"> 
+            <div class="title" id="pros">
+                <h2>Каршеринг <span style="color: #008000;">Green Cars</span>, это</h2>
+            </div>
+        </div> 
+
+        <div class="container">
+            <div class="pros">
+                <div class="useful">
+                    <img src="img/icon1.png" alt="">
+                    <span class="useful_title">Доступно</span>
+                    <span class="line"></span>
+                    <p class="description">Аренда от 1 минуты, дешевле такси</p>
+                </div>
+                <div class="useful">
+                    <img src="img/icon2.png" alt="">
+                    <span class="useful_title">Просто</span>
+                    <span class="line"></span>
+                    <p class="description">Ключи и все документы уже в авто</p>
+                </div>
+                <div class="useful">
+                    <img src="img/icon3.png" alt="">
+                    <span class="useful_title">Быстро</span>
+                    <span class="line"></span>
+                    <p class="description">Без менеджеров, договоров и офисов</p>
+                </div>
+                <div class="useful">
+                    <img src="img/icon4.png" alt="">
+                    <span class="useful_title">Удобно</span>
+                    <span class="line"></span>
+                    <p class="description">Бери и оставляй машину в любой зоне по городу</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="useful_div">
+        <div class="container">
+            <div class="wrapper_useful-item">
+                <div class="useful_item">
+                    <span class="useful_item-title">Как твоё собственное авто, на время аренды</span>
+                    <span class="line_2"></span>
+                    <p class="useful_item-descriprion">Только ты управляешь автомобилем, музыкой и</br >климатом в авто.</p>
+                    <p class="useful_item-descriprion">Возьми машину на несколько минут, дней или суток. За зарядку, мойку и парковку по городу платить НЕ нужно!</p>
+                </div>
+                <div class="useful_item">
+                    <span class="useful_item-title">Как такси, только дешевле</span>
+                    <span class="line_2"></span>
+                    <p class="useful_item-descriprion">Такси называет слишком высокую цену?</p>
+                    <p class="useful_item-descriprion">У нас всегда стабильная цена, независимо от занятости авто и погоды.</p>
+                    <p class="useful_item-descriprion">Мы дешевле, чем такси минимум на 20-30%</p>
+                    <p class="useful_item-descriprion">Не слушай истории таксистов и их музыку.</p>
+                </div>
+                <div class="useful_item">
+                    <span class="useful_item-title">Просто покататься</span>
+                    <span class="line_2"></span>
+                    <p class="useful_item-descriprion">Подвезти маму, покатать девушку или парня. Покататься самому, быстро решить все свои вопросы - берёшь автомобиль всего на несколько минут или часов.</p>
+                    <p class="useful_item-descriprion">Не плати за целые сутки, зарядку и мойку - всё это в прошлом.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="auto"></div>
+    <!-- Меню выбора авто -->
+    <div class="container">
+        <div class="title">
+            <h2></br >Наши автомобили</h2>
+        </div>
+        <!-- 1 -->  
+        <a href="#" class="open_modal" data-modal="1"><img src="img/car1.png" height="80" alt=""></br >Tesla <br />Model X</a>
+        <div class="modal" data-modal="1">
+            <svg class="modal_close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+            <div class="car1">
+                <div class="car_block">
+                    <h2 class="title_car">Tesla Model X</h2>
+                    <div class="cars_info">
+                        <div class="cars_info-block">
+                            <div class="trip_price_car1">
+                                <h3 class="price_title">поездка</h3>
+                                <p class="cars_info-text">от <strong>0.2 BYN</strong>/мин</p>
+                            </div>
+                        </div>
+                        <div class="cars_info-block">
+                            <div class="wait_price_car1">
+                                <h3 class="price_title">ожидание</h3>
+                                <p class="cars_info-text">от <strong>0.1 BYN</strong>/мин</p>
+                            </div>
+                        </div>
+                    </div>    
+                    <p class="about_car">Обеспечит максимально удобный интерьер<br />
+                        с лучшими в своем классе хранилищами, вместимостью до семи взрослых и большим <br />сенсорным 17-дюймовым экраном.
+                    </p>
+                </div>
+                <img src="img/car11.png" alt="" width="740" class="cars_img">
+            </div>
+        </div>
+        <div class="overlay"></div>
+        <!-- 2 -->
+        <a href="#" class="open_modal" data-modal="2"><img src="img/car2.png" height="80" alt=""></br >Tesla <br />Model S</a>
+        <div class="modal" data-modal="2">
+            <svg class="modal_close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+            <div class="car2">
+                <div class="car_block">
+                    <h2 class="title_car">Tesla Model S</h2>
+                    <div class="cars_info">
+                        <div class="cars_info-block">
+                            <div class="trip_price_car1">
+                                <h3 class="price_title">поездка</h3>
+                                <p class="cars_info-text">от <strong>0.2 BYN</strong>/мин</p>
+                            </div>
+                        </div>
+                        <div class="cars_info-block">
+                            <div class="wait_price_car1">
+                                <h3 class="price_title">ожидание</h3>
+                                <p class="cars_info-text">от <strong>0.1 BYN</strong>/мин</p>
+                            </div>
+                        </div>
+                    </div>    
+                    <p class="about_car">Усовершенствованные функции безопасности и удобства автопилота разработаны,
+                        чтобы помочь вам в самых обременительных условиях вождения.
+                    </p>
+                </div>
+                <img src="img/car22.png" alt="" width="740" class="cars_img" id="car2_img">
+            </div>
+        </div>
+        <div class="overlay"></div>
+        <!-- 3 -->
+        <a href="#" class="open_modal" data-modal="3"><img src="img/car3.png" height="80px" alt=""></br >Audi <br />e-tron</a>
+        <div class="modal" data-modal="3">
+            <svg class="modal_close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+            <div class="car3">
+                <div class="car_block">
+                    <h2 class="title_car" id="audi_title-car">Audi e-tron</h2>
+                    <div class="cars_info">
+                        <div class="cars_info-block">
+                            <div class="trip_price_car1">
+                                <h3 class="price_title">поездка</h3>
+                                <p class="cars_info-text">от <strong>0.5 BYN</strong>/мин</p>
+                            </div>
+                        </div>
+                        <div class="cars_info-block">
+                            <div class="wait_price_car1">
+                                <h3 class="price_title">ожидание</h3>
+                                <p class="cars_info-text">от <strong>0.3 BYN</strong>/мин</p>
+                            </div>
+                        </div>
+                    </div>    
+                    <p class="about_car">Это премиальный полностью электрический 
+                        пятиместный кроссовер для поездок в городе <br />и за его пределами. С запасом хода до 440 км.
+                    </p>
+                </div>
+                <img src="img/car33.png" alt="" width="700" height="423" class="cars_img" id="car3_img">
+            </div>
+        </div>
+        <div class="overlay"></div>
+        <!-- 4 -->
+        <a href="#" class="open_modal" data-modal="4" id="tariffs"><img src="img/car4.png" height="80" alt=""></br >Tesla Cybertruck</a>
+        <div class="modal" data-modal="4">
+            <svg class="modal_close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+            <div class="car4">
+                <div class="car_block">
+                    <h2 class="title_car">Tesla Cybertruck</h2>
+                    <div class="cars_info">
+                        <div class="cars_info-block">
+                            <div class="trip_price_car1">
+                                <h3 class="price_title">поездка</h3>
+                                <p class="cars_info-text">от <strong>0.9 BYN</strong>/мин</p>
+                            </div>
+                        </div>
+                        <div class="cars_info-block">
+                            <div class="wait_price_car1">
+                                <h3 class="price_title">ожидание</h3>
+                                <p class="cars_info-text">от <strong>0.5 BYN</strong>/мин</p>
+                            </div>
+                        </div>
+                    </div>    
+                    <p class="about_car">Электромобиль - пикап в стиле киберпанк.  
+                        Обеспечивает максимальную надёжность и <br />защиту пассажиров. Проезжает до 800 км от <br />одного заряда.
+                        Грузоподъемность - 1,6 т.
+                    </p>
+                </div>
+                <img src="img/car44.png" alt="" width="700" height="423" class="cars_img">
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+
+    <!-- Тарифы -->
+    <div class="container">
+        <div class="title">
+            <h2>Тарифы</h2>
+        </div>
+        <div class="row_price">
+            <div class="item_price">
+                <div class="price_top" id="price_top1">
+                    <span class="price_name">Поминутный</span>
+                    <span class="price_coast">0.2 - 0.9</span>
+                    <span class="price_coast-descriprion">BYN/мин</span>
+                    <p class="price_description">Подходит лучше всего для коротких поездок, меньше одного часа</p>
+                </div>
+                <div class="price_bottom">
+                    <div class="price_event">
+                        <span class="event_name">Включённый пробег</span>
+                        <span class="event_coast">50 км</span>
+                    </div>
+                    <div class="price_event">
+                        <span class="event_name">Бронирование</span>
+                        <span class="event_coast">0 BYN/20мин</span>
+                    </div>
+                    <div class="price_event">
+                        <span class="event_name">Ожидание</span>
+                        <span class="event_coast">0.4 - 0.9 BYN</span>
+                    </div>
+                    <div class="price_event">
+                        <span class="event_name">Стоимость перепробега</span>
+                        <span class="event_coast">0.5 BYN/за 1 км</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="item_price">
+                <div class="price_top" id="price_top2">
+                    <span class="price_name">Час + 10 км</span>
+                    <span class="price_coast">10 - 35</span>
+                    <span class="price_coast-descriprion">BYN</span>
+                    <p class="price_description">Тариф для поездок по городу на несколько часов, лучше всего использовать при первом знакомстве с услугой</p>
+                </div>
+                <div class="price_bottom">
+                    <div class="price_event">
+                        <span class="event_name">Включённый пробег</span>
+                        <span class="event_coast">10 км</span>
+                    </div>
+                    <div class="price_event">
+                        <span class="event_name">Бронирование</span>
+                        <span class="event_coast">0 BYN/25мин</span>
+                    </div>
+                    <div class="price_event">
+                        <span class="event_name">Ожидание</span>
+                        <span class="event_coast">0 BYN</span>
+                    </div>
+                    <div class="price_event">
+                        <span class="event_name">Стоимость перепробега</span>
+                        <span class="event_coast">0.5 BYN/за 1 км</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="item_price">
+                <div class="price_top" id="price_top3">
+                    <span class="price_name">Суточный + 100 км</span>
+                    <span class="price_coast">100 - 200</span>
+                    <span class="price_coast-descriprion">BYN</span>
+                    <p class="price_description">Для комфортной аренды авто на 24 часа, или на более долгий срок</p>
+                </div>
+                <div class="price_bottom">
+                    <div class="price_event">
+                        <span class="event_name">Включённый пробег</span>
+                        <span class="event_coast">100 км</span>
+                    </div>
+                    <div class="price_event">
+                        <span class="event_name">Бронирование</span>
+                        <span class="event_coast">0 BYN/30мин</span>
+                    </div>
+                    <div class="price_event">
+                        <span class="event_name">Ожидание</span>
+                        <span class="event_coast">0 BYN</span>
+                    </div>
+                    <div class="price_event">
+                        <span class="event_name">Стоимость перепробега</span>
+                        <span class="event_coast">0.5 BYN/за 1 км</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Паркинг -->
+    <div class="pay_parking">
+        <div class="container">
+            <div class="parking_text">
+                <span>Городские</br >паркинги и</span>
+                <span>зарядку</br >оплачивать</span>
+                <span>не нужно</span>
+            </div>
+        </div>
+        <div class="img_parking">
+            <img src="img/parking.png" alt="">
+        </div>       
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#" id="toTop">Вверх</a>
+        <div class="container">
+            <div class="footer_row">
+                <div class="footer_col">
+                    <a href="rules.html" class="footer_link">Стаж и возраст</a>
+                    <a href="rules.html#rule2" class="footer_link">Передача автомобиля</a>
+                    <a href="rules.html#rule4" class="footer_link">Страховка</a>
+                    <a href="rules.html#rule6" class="footer_link">ПДД и штрафы</a>
+                </div>
+                <div class="footer_col">
+                    <address>
+                        Клиентская поддержка 24 часа:</br >
+                        <a href="tel:+375296294585">+375 (29) 629-45-85</a></br >
+                        <a href="tel:+375336294585">+375 (33) 629-45-85</a></br >
+                        <a href="mailto:greencars@gmail.com">greencars@gmail.com</a></br >
+                    </address>
+                    <address>
+                        </br >Рекламные и другие предложения:</br >
+                        <a href="mailto:greencarsPR@gmail.com">greencarsPR@gmail.com</a>
+                    </address>
+                </div>
+                <div class="footer_col">
+                    <span class="social">Мы в социальных сетях</span>
+                    <div class="wrapper_social-link">
+                        <a href="https://www.youtube.com/" class="social_link">
+                            <img src="img/social1.png" alt="">
+                        </a>
+                        <a href="https://www.instagram.com/" class="social_link">
+                            <img src="img/social2.png" alt="">
+                        </a>
+                        <a href="https://www.facebook.com/" class="social_link">
+                            <img src="img/social3.png" alt="">
+                        </a>
+                    </div>
+                    <span class="rights">© Все права защищены</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

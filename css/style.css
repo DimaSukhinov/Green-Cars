@@ -1,0 +1,1035 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font: 15px sans-serif;
+    background: #f1f1f1;
+}
+
+a{ 
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header_div {
+    background: #f1f1f1;
+    margin-top: -8px;
+}
+
+/* Меню */
+
+.topnav {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    position: fixed;
+    width: 100%;
+    margin-top: -92px;
+    margin-left: -8px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+    z-index: 9999;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #008000;
+    text-align: center;
+    padding: 24px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.topnav a:first-child {
+    margin-left: 350px;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.main_page {
+    display: none;
+}
+
+.fa {
+    display:inline-block;
+    font:normal normal normal 14px/1 FontAwesome;
+    font-size:inherit;
+    text-rendering:auto;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+/* Меню */
+
+/* Баннер */
+
+.header_banner {
+    width: 100%;
+    display: block;
+    margin-top: 100px;
+}
+
+.header_title {
+    font-size: 54px;
+    line-height: 72px;
+    font-family: 'Avenir Next';
+    font-style: normal;
+    display: block;
+}
+
+.row_banner {
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 160px;
+}
+
+.col_banner {
+    display: block;
+    float: right;
+}
+
+.col_banner img {
+    width: 660px;
+}
+
+.col_banner-left {
+    margin-top: 50px;
+    display: block;
+}
+
+.row_banner p {
+    font-size: 22px;
+    line-height: 28px;
+    margin: 0 0 11px;
+    display: block;
+}
+
+/* Баннер */
+
+/* Преимущства */
+
+.pros {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.useful {
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .7);
+    box-sizing: border-box;
+    border-radius: 16px;
+    transition: all .3s;
+    display: block;
+    color: #000000;
+    float: left;
+    width: calc(25% - 20px);
+}
+
+.useful:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.useful img {
+    vertical-align: middle;
+}
+
+.useful_title {
+    display: block;
+    font-weight: 600;
+    font-family: 'Avenir Next';
+    font-size: 23px;
+    color: #000000;
+    margin: 10px 0 5px;
+}
+
+.line {
+    width: 100px;
+    height: 1px;
+    background: #ccc;
+    margin: 5px 0 10px;
+    display: block;
+    margin: auto; 
+    text-align: center;
+}
+
+.description {
+    font-family: 'Proxima Nova Rg';
+    font-size: 20px;
+    margin-top: 12px;
+    text-align: center;
+    color: #000;
+}
+
+/* */
+
+.useful_div {
+    background: #556f70;
+    margin-top: -40px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.wrapper_useful-item {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 104px;
+}
+
+.useful_item {
+    width: calc(33% - 15px);
+    margin-bottom: 0;
+    padding-left: 0;
+    display: block;
+}
+
+.useful_item-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 30px;
+}
+
+.useful_item-descriprion {
+    font-size: 18px;
+    color: #fff;
+    line-height: 22px;
+    width: 80%;
+}
+
+.line_2 {
+    width: 110px;
+    height: 1px;
+    background: #fff;
+    margin: 10px 0;
+    display: block;
+}
+
+/* Преимущства */
+
+/* Всплывающее окно */
+
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    max-width: 1300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: 0.3s all;
+}
+
+.modal_close {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    fill: #444;
+    cursor: pointer;
+}
+
+.modal.active,
+.overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.open_modal {
+    text-decoration: none;
+    margin: 30px 0 70px 23px;
+    color: #FFFFFF;
+    font-size: 34px;
+    font-family: 'Avenir Next';
+    border-radius: 3px;
+    width: 260px;
+    height: 140px;
+    text-align: center;
+    display: block;
+    float: left;
+    border-radius: 16px;
+    color: #000000;
+}
+
+.open_modal br {
+    display: none;
+}
+
+.open_modal:hover {
+    background-color: #e3fff7;
+    text-shadow: none;
+    color: black;
+}
+
+.container_modal {
+    max-width: 1900px;
+}
+
+.overlay {
+    opacity: 0;
+    visibility: hidden;   
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+}
+
+/* Всплывающее окно */
+
+/* Меню выбора авто */
+
+h3 {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.car_block {
+    display: inline;
+    float: left;
+    height: 423px;
+    width: 500px;
+}
+
+.title_car {
+    font-size:36px;
+    line-height:28px;
+    color:#1c2024;
+    margin-left: 30px;
+    font-family: 'Avenir Next';
+}
+
+#audi_title-car {
+    margin-left: 63px;
+}
+
+.cars_info {
+    display: flex;
+    margin-bottom: 42px;
+}
+
+.cars_info-text {
+    font-size:22px;
+    line-height:28px;
+    margin:0 50px 8px 0;
+}
+
+.about_car {
+    display:block;
+    font-size:20px;
+    line-height:28px;
+}
+
+.price_title {
+    font-family: 'Avenir Next';
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 10px 0 20px 0;
+}
+
+.cars_img {
+    display: inline;
+    float: left;
+}
+
+#car2_img {
+    margin-top: 20px;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Avenir Next';
+    font-size: 30px;
+    margin: 50px 0 0 0;
+    color: #000000;
+    border-radius: 16px;
+}
+
+/* Меню выбора авто */
+
+/*Тарифы*/
+
+.row_price {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item_price {
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    box-shadow: 0 6px 15px rgba(0,0,0,.25);
+    width: calc(33.33333% - 20px);
+}
+
+.item_price:hover {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+    transition: 0.5s;
+}
+
+.price_top {
+    padding: 20px;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+#price_top1 {
+    background: #4fb828;
+}
+
+#price_top2 {
+    background: #26ae28;
+}
+
+#price_top3 {
+    background: #229421;
+}
+
+.price_name {
+    font-size: 30px;
+    line-height: 35px;
+    color: #fff;
+    font-family: Roboto Light,sans-serif;
+    font-weight: 300;
+    display: block;
+    padding-bottom: 15px;
+}
+
+.price_coast {
+    font-size: 40px;
+    line-height: 52px;
+    display: block;
+    color: #fff;
+    font-family: Roboto Bold,sans-serif;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
+.price_coast-descriprion {
+    display: block;
+    font-size: 26px;
+    font-family: Roboto Light,sans-serif;
+    font-weight: 300;
+    color: #fff;
+    line-height: 35px;
+}
+
+.price_description {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    height: 60px;
+    color: #fff;
+    font-family: Roboto Regular,sans-serif;
+    font-weight: 400;
+}
+
+.price_bottom {
+    display: block;
+    padding: 20px;
+}
+
+.price_event {
+    width: 100%;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.event_name {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: Roboto Regular,sans-serif;
+    font-weight: 400;
+    display: inline-block;
+    color: #2e2e2e;
+    width: 62%;
+}
+
+.event_coast {
+    font-family: Roboto Regular,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #2e2e2e;
+    width: 35%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*Тарифы*/
+
+/* Паркинг */
+
+.pay_parking {
+    background: #ffffff;
+    margin: 0 -8px 80px -8px;
+    padding-top: 120px;
+    padding-bottom: 160px;
+}
+
+.pay_parking span {
+    font-family: Roboto Black, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 92px;
+    line-height: 110px;
+    color: #c4c4c4;
+    display: block;
+}
+
+.img_parking {
+    width: 48%;
+    min-width: 400px;
+    height: auto;
+    margin-top: -405px;
+    max-width: 778px;
+    vertical-align: middle;
+    float: right;
+}
+
+/* Паркинг */
+
+/* Кнопка для перехода вверх */
+
+#toTop {
+    text-decoration: none;
+    outline: none;
+    display: none;
+    width: 120px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 45px;
+    margin: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #008000;
+    background: #2EE59D;
+    box-shadow: 0 8px 15px rgba(0,0,0,.1);
+    transition: .3s;
+    bottom: 10px;
+    right: 5px;
+    position: fixed;
+}
+
+#toTop:hover {
+    background: #2EE59D;
+    box-shadow: 0 15px 20px rgba(46,229,157,.4);
+    color: white;
+    transform: translateY(-7px);
+}
+
+/* Кнопка для перехода вверх */
+
+/* Footer */
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 80px 0 60px;
+    display: block;
+    margin: 0 -8px 0 -8px;
+}
+
+.footer_row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_col {
+    width: 30%;
+    min-width: 260px;
+    margin-bottom: 20px;
+    display: block;
+    color: #000000;
+}
+
+.footer_link {
+    font-size: 17px;
+    line-height: 27px;
+    font-family: Roboto Medium, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #008000;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer address {
+    font-size: 16px;
+    line-height: 27px;
+    font-style: normal;
+    display: block;
+}
+
+.footer address a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.social, .rights {
+    font-size: 16px;
+    line-height: 27px;
+    font-family: Roboto Regular, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #2e2e2e;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.wrapper_social-link {
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+/* Footer */
+
+
+
+
+
+
+@media screen and (max-width: 1550px) {
+
+    /* Меню */
+    
+    .topnav {
+        margin-top: -93px;
+    }
+
+    .topnav a {
+        padding: 10px 10px;
+    }
+
+    .topnav a:first-child {
+        margin-left: 0;
+    }
+
+    .topnav a:not(:first-child) { 
+        display: none;
+    }
+    
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {
+        position: fixed;
+    }
+
+    .topnav.responsive .icon {
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+    
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .main_page {
+        display: block;
+    }
+    
+    /* Меню */
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Меню выбора авто */
+
+    .open_modal {
+        max-width: 220px;
+    }
+
+    .open_modal img {
+        height: 65px;
+    }
+
+    .open_modal br {
+        display: block;
+    }
+
+    /* Меню выбора авто */
+
+    /* Паркинг */
+
+    .img_parking {
+        max-width: 1024px;
+        height: auto;
+        vertical-align: middle;
+        float: right;
+        margin-top: -260px;
+        margin-right: -15px;
+    }
+
+    .pay_parking {
+        padding-top: 10px;
+    }
+
+    .pay_parking span {
+        font-size: 86px;
+        line-height: 96px;
+    }
+
+    .img_parking img {
+        width: 94%;
+    }
+
+    /* Паркинг */
+
+}
+
+@media screen and (max-width: 1440px) {
+
+    .img_parking img {
+        width: 680px;
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Меню */
+    
+    .topnav {
+        margin-top: -22px;
+    }
+
+    .topnav a {
+        padding: 10px 10px;
+    }
+
+    .topnav a:first-child {
+        margin-left: 0;
+    }
+
+    .topnav a:not(:first-child) { 
+        display: none;
+    }
+    
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {
+        position: fixed;
+    }
+
+    .topnav.responsive .icon {
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+    
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .main_page {
+        display: block;
+    }
+    
+    /* Меню */
+
+    /* Баннер */
+
+    .header_banner {
+        margin-top: 30px;
+    }
+
+    .header_title {
+        font-size: 42px;
+        line-height: 52px;
+        margin-top: 30px;
+    }
+
+    .row_banner {
+        display: block;
+    }
+
+    .row_banner p {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 10px;
+    }
+    
+    .col_banner {
+        display: block;
+        float: right;
+    }
+    
+    .col_banner img {
+        width: 370px;
+    }
+    
+    .col_banner-left {
+        margin-top: 50px;
+        display: block;
+    }
+
+    /* Баннер */
+
+    /* Премущества */
+
+    .pros {
+        display: block;
+    }
+    
+    .useful {
+        margin-left: 4px;
+        margin-right: 18px;
+        width: auto;
+    }
+
+    .useful:hover {
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+
+    /* */
+
+    .useful_div {
+        margin: -50px -8px -25px -8px;
+    }
+
+    .wrapper_useful-item {
+        display: block;
+    }
+    
+    .useful_item {
+        width: 100%;
+        display: block;
+    }
+
+    .useful_item-title {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .useful_item-descriprion {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    /* Преимущества */
+
+    /* Меню выбора авто */
+
+    .open_modal {
+        margin-left: 60px;
+    }
+
+    .open_modal br {
+        display: none;
+    }
+
+    .modal {
+        width: 95%;
+        height: 75%;
+    }
+
+    .car_block {
+        display: block;
+        width: 100%;
+    }
+
+    .title_car {
+        font-size: 32px;
+        margin-left: 14px;
+    }
+
+    .price_title {
+        font-size: 16px;
+    }
+
+    .cars_info-text {
+        font-size: 18px;
+    }
+
+    .about_car {
+        font-size: 18px;
+        line-height: 18px;
+        margin-top: -20px;
+    }
+
+    .about_car br {
+        display: none;
+    }
+
+    .modal img {
+        width: 100%;
+        height: auto;
+        margin-top: -60px;
+    }
+
+    #car2_img {
+        margin-top: -70px;
+    }
+
+    #car3_img {
+        margin-top: -90px;
+    }
+
+    /* Меню выбора авто */
+
+    /* Тарифы */
+
+    .row_price {
+        display: block;
+    }
+
+    .item_price {
+        width: auto;
+        margin-left: 4px;
+        margin-right: 19px;
+    }
+
+    .item_price:hover {
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        transition: none;
+    }
+
+    /* Тарифы */
+
+    /* Паркинг */
+
+    .img_parking {
+        max-width: 375px;
+        height: auto;
+        vertical-align: middle;
+        float: left;
+        margin-top: -70px;
+    }
+
+    .pay_parking {
+        padding-top: 10px;
+    }
+
+    .pay_parking span {
+        font-size: 42px;
+        line-height: 49px;
+        padding-left: 15px;
+    }
+
+    .img_parking img {
+        width: 94%;
+    }
+
+    /* Паркинг */
+
+    /* Кнопка для перехода вверх */
+
+    #toTop {
+        width: 90px;
+        height: 43px;
+        margin: 10px 6px;
+        font-size: 10px;
+        bottom: 0;
+        right: 0;
+    }
+    
+    /* Кнопка для перехода вверх */
+
+    /* Footer */
+
+    .footer {
+        margin-bottom: -8px;
+        margin-top: -100px;
+    }
+
+    .footer_row {
+        display: block;
+        margin-top: -20px;
+        padding-left: 54px;
+    }
+
+    .footer_col {
+        margin-bottom: 30px;
+    }
+
+    .footer address, .social, .rights, .footer_col a {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .rights {
+        margin-top: -18px;
+    }
+
+    /* Footer */
+}
